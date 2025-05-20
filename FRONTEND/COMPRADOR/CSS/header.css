@@ -11,27 +11,21 @@ body {
   padding: 0;
 }
 
-
-/* Classe para quando a sidebar estiver expandida */
 .sidebar-expanded .container-fluid {
-  padding-left: 180px; /* Ajuste conforme a largura da sua sidebar expandida */
+  padding-left: 180px; 
 }
 
-
-/* Garantir que apenas os itens do navbar se movam, não o perfil */
 .sidebar-expanded .navbar-nav {
-  margin-left: 170px; /* Ajuste conforme necessário */
+  margin-left: 170px;
 }
 
-
-/* Botão de upload e outros elementos à esquerda */
 #imgheader {
   transition: margin-left 0.3s ease;
 }
 
 
 .sidebar-expanded #imgheader {
-  margin-left: 20px; /* Ajuste conforme necessário */
+  margin-left: 20px;
 }
 
 
@@ -63,9 +57,6 @@ body {
   height: 56px;
   box-shadow: #b4b4b4 1px 0 3px 0px;
 }
-
-
-
 
 .navbar-nav {
   display: flex;

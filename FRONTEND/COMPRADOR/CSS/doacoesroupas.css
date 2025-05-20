@@ -236,12 +236,9 @@ body {
 .modal-footer {
    
     padding: 1rem;
-  
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
-
 
 @media (max-width: 768px) {
     .form-container {

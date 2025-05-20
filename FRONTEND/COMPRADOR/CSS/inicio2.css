@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
-/* Reset for container to remove unwanted margins */
+
 .container {
   padding-left: 0;
   padding-right: 0;
@@ -28,63 +28,6 @@ body {
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-/* Classe para quando a sidebar estiver expandida */
-.sidebar-expanded .container-fluid {
-  padding-left: 180px; /* Ajuste conforme a largura da sua sidebar expandida */
-}
-
-/* Garantir que apenas os itens do navbar se movam, não o perfil */
-.sidebar-expanded .navbar-nav {
-  margin-left: 170px; /* Ajuste conforme necessário */
-}
-
-/* Botão de upload e outros elementos à esquerda */
-#imgheader {
-  transition: margin-left 0.3s ease;
-}
-
-.sidebar-expanded #imgheader {
-  margin-left: 20px; /* Ajuste conforme necessário */
-}
-
-.header.animated {
-  animation: slideIn 0.5s ease-in-out;
-}
-
-.container-fluid {
-  position: relative;
-  transition: padding-left 0.3s ease;
-}
-
-.page-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-top: 65px;
-  margin-left: 60px;
-  position: relative;
-  width: calc(100% - 60px); /* Adjusted for sidebar width */
-}
-
-.navbar {
-  background-color: #ffffff;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  height: 56px;
-  box-shadow: #b4b4b4 1px 0 3px 0px;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: start;
-  padding-left: 3rem;
-  align-items: center;
-  flex-grow: 1;
-  list-style: none;
-  margin-right: 3rem;
-  gap: 3rem;
-  font-size: 14px;
-}
 
 .container-fluid {
   display: flex;
@@ -152,15 +95,6 @@ body {
   display: block;
 }
 
-#imgheader {
-  background-color: #D3D3D3;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 220px;
-  z-index: 800;
-}
-
 .upload-btn input {
   display: none;
 }
@@ -178,65 +112,6 @@ body {
   font-size: 40px;
   color: #CCC;
   display: inline;
-}
-
-.sidebar {
-  position: fixed;
-  left: 0;
-  height: 100vh;
-  width: 60px;
-  background-color: #ECECEC;
-  transition: width 0.3s ease;
-  overflow: hidden;
-  z-index: 700;
-  margin-top: 0;
-  top: 0px;
-  border-radius: 6px;
-}
-
-.sidebar-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 650;
-}
-
-.sidebar:hover {
-  width: 230px;
-}
-
-.sidebar nav a {
-  display: flex;
-  align-items: center;
-  color: rgb(0, 0, 0);
-  padding: 15px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.sidebar nav a i {
-  font-size: 1.2rem;
-  margin-right: 20px;
-}
-
-.sidebar nav a span {
-  display: none;
-}
-
-.sidebar:hover nav a span {
-  display: inline;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200;
 }
 
 main {
@@ -466,85 +341,6 @@ main {
   background-color: #a35f12a4;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-/* Footer corrigido */
-footer {
-  background-color: #FCF2E8;
-  padding: 20px 50px;
-  font-family: "Lexend Deca", sans-serif;
-  box-sizing: border-box;
-  z-index: 800;
-  width: 100%;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.footer-left {
-  max-width: 400px;
-  font-size: 12px;
-}
-
-.footer-left p {
-  font-size: 10px;
-}
-
-.footer-logo {
-  height: 90px;
-  margin-bottom: 10px;
-}
-
-.footer-right {
-  display: flex;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.footer-column {
-  display: flex;
-  flex: 2;
-  flex-direction: column;
-  min-width: 200px;
-  text-align: center;
-}
-
-.footer-column h3 {
-  font-weight: 400;
-  font-size: 16px;
-  color: #535151;
-  margin-bottom: 10px;
-}
-
-.footer-column a:hover {
-  color: #8B7777;
-}
-
-.footer-column a {
-  color: #EC9E07;
-  text-decoration: none;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
-}
-
-#imgfooter {
-  background-color: #D3D3D3;
-  border: none;
-  height: 60px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 200px;
-  margin-bottom: 20px;
 }
 
 #btnn {
@@ -826,37 +622,6 @@ i {
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
-  footer {
-    padding: 20px 40px;
-  }
- 
-  .footer-container {
-    gap: 30px;
-  }
- 
-  .footer-left {
-    max-width: 250px;
-  }
-
-  .footer-left p {
-    font-size: 10px;
-  }
- 
-  .footer-right {
-    gap: 10px;
-  }
- 
-  .footer-column {
-    min-width: 150px;
-  }
- 
-  .footer-column h3 {
-    font-size: 10px;
-  }
- 
-  .footer-column a {
-    font-size: 8px;
-  }
  
   #botao, #facebook {
     font-size: 8px;
