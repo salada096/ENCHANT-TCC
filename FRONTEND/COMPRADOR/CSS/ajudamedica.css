@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+main{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h1{
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  color: #693B11;
+  max-width: auto;
+  margin: 50px auto;
+  font-size: 32px;
+  padding-top: 50px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.6;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+h2{
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  color: #693B11;
+  max-width: auto;
+  margin-bottom: 15px;
+  font-size: 24px;
+  margin-top: 60px;
+  
+}
+
+p strong {
+  display: block;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
+  font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+
+    align-items: center;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+
+    gap: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+
+.item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+    color: #3E3E3E;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #3E3E3E;
+}
+
+.info span {
+    color: #666;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+  main {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+}
