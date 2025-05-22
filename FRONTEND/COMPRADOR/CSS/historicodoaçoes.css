@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Lexend+Deca:wght@400&display=swap");
 
 body {
+  display: flex;
   font-family: "Lexend Deca", sans-serif;
   background-color: #FFFFFF;
   justify-content: center;
-  align-items: flex-start;
   min-height: 100vh;
   width: auto;
 }
@@ -18,7 +18,7 @@ body {
   padding-bottom: 10px;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .inicio h1 {
@@ -55,6 +55,7 @@ body {
   max-width: 2200px;
   margin-left: 150px;
   margin-right: 150px;
+  margin-bottom: 80px;
   box-sizing: border-box;
 }
 
