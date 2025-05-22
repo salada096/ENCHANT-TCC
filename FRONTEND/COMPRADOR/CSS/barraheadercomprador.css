@@ -854,6 +854,13 @@ text-decoration: underline;
 }
 }
 
+@media (min-width: 1270px) and (max-width: 1400px) {
+   
+    footer{
+        margin-left: -52px;
+    }
+}
+
 @media (min-width: 1500px) {
 #btnn2 {
 background-color: transparent;
@@ -882,6 +889,7 @@ margin-bottom: 20px;
 }
 
 footer {
+
 padding: 20px 50px;
 font-family: "Lexend Deca", sans-serif;
 }
