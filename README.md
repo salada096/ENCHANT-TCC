@@ -1,4 +1,4 @@
-# Projeto Enchant: Otimizando a Resposta a Enchentes na Bahia 🌊🇧🇷
+# Projeto Enchant: Otimizando a Resposta a Enchentes na Bahia 🌊
 
 ## Visão Geral
 
