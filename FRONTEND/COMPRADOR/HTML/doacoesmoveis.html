@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doação Roupas e Calçados</title>
+    <title>Doação Móveis e Eletrodomésticos</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Passero+One&family=Passion+One:wght@400;700;900&display=swap">
-     
+    <link rel="shortcut icon" href="https://i.ibb.co/7NybZ3W7/1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="./CSS/doacoesroupas.css">
+   <link rel="stylesheet" href="./CSS/doacoesmoveis.css">
+   <link rel="stylesheet" href="./CSS/barraheadercomprador.css">
    <link
    rel="stylesheet"
    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -18,9 +19,8 @@
    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
  />
  <link rel="stylesheet" href="https://phosphoricons.com?q=%22menu%22" />
- <link rel="stylesheet" href="./CSS/header.css" />
- <script src="./JS/header.js"></script>
- <link rel="shortcut icon" href="https://i.ibb.co/7NybZ3W7/1.png" type="image/x-icon">
+ <link rel="stylesheet" href="./CSS/barraheadercomprador.css" />
+ <script src="./barraheadercomprador.html"></script>
 </head>
 <body>
  <!-- Atualização da seção do navbar -->
@@ -99,10 +99,10 @@
          </button>
          <!-- Dropdown menu movido para dentro do item de lista -->
          <div id="dropzinho" class="dropdown-menu">
-           <a class="dropdown-item" href="#"
+           <a class="dropdown-item" href="perfilcomprador.html"
              ><i class="bi bi-person"></i> Perfil</a
            >
-           <a class="dropdown-item" href="inicio1.html"
+           <a class="dropdown-item" href="#"
              ><i class="bi bi-box-arrow-right"></i> Sair</a
            >
          </div>
@@ -236,37 +236,30 @@
 
         <div class="content-wrapper">
             <div class="background-container">
-                <img src="./IMAGENS/5.png" alt="Imagem de fundo" id="img1" class="background-image">
-                <img src="./IMAGENS/6.png" alt="Imagem de fundo" id="img2" class="background-image">
-                <img src="./IMAGENS/7.png" alt="Imagem de fundo" id="img3" class="background-image">
-                <img src="./IMAGENS/8.png" alt="Imagem de fundo" id="img4" class="background-image">
+                <img src="./Imagens/5.png" alt="Imagem de fundo" id="img1" class="background-image">
+                <img src="./imagens/11.png" alt="Imagem de fundo" id="img2" class="background-image">
+                <img src="./imagns/7.png" alt="Imagem de fundo" id="img3" class="background-image">
+                <img src="./imagens/12.png" alt="Imagem de fundo" id="img4" class="background-image">
             </div>
 
             <div class="tab-buttons">
-                <button id="roupas-tab" class="navigation-btn active">
-                    <span class="material-symbols-outlined">apparel</span>
+                <button id="moveis-tab" class="navigation-btn active">
+                    <span class="material-symbols-outlined">weekend</span>
                 </button>
-                <button id="calcados-tab" class="navigation-btn">
-                    <span class="material-symbols-outlined">steps</span>
+                <button id="eletro-tab" class="navigation-btn">
+                    <span class="material-symbols-outlined">kitchen</span>
                 </button>
             </div>
 
             <div class="form-container">
-                <div id="roupas" class="section-card">
-                    <h2 class="section-title">Roupas</h2>
+                <div id="moveis" class="section-card">
+                    <h2 class="section-title">Móveis</h2>
                     
-                    <div class="form-group">
-                        <label class="form-label">Gênero</label>
-                        <select id="roupasgenero" name="roupasgenero" class="form-control">
-                            <option value="" disabled selected>Selecione...</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                        </select>
-                    </div>
+                  
                     
                     <div class="form-group">
                         <label class="form-label">Qualidade</label>
-                        <select id="roupasqualidade" name="roupasqualidade" class="form-control">
+                        <select id="moveisqualidade" name="moveisqualidade" class="form-control">
                             <option value="" disabled selected>Selecione...</option>
                             <option value="Novo">Novo</option>
                             <option value="Usado-Bom">Usado-Bom</option>
@@ -276,66 +269,72 @@
                     
                     <div class="form-group">
                         <label class="form-label">Quantidade</label>
-                        <input type="number" id="roupasquantidade" name="roupasquantidade" placeholder="Digite..." min="1" class="form-control" required>
+                        <input type="number" id="moveisquantidade" name="moveisquantidade" placeholder="Digite..." min="1" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label">Tamanho</label>
-                        <input type="text" id="roupasdescricao" name="roupasdescricao" placeholder="P,M,G,34..." class="form-control" required>
+                        <label class="form-label">Especificação</label>
+                        <input type="text" id="moveisdescricao" name="moveisdescricao" placeholder="sofa, cadeira, mesa..." class="form-control" required>
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label">Tipo</label>
-                        <input type="text" id="roupastipo" name="roupastipo" placeholder="Calça, camisa.." class="form-control" required>
+                        <label class="form-label">Precisa de reparo?</label>
+                        <select id="moveisreparo" name="moevisreparo" class="form-control">
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="Sim_Muito">Sim-Muito</option>
+                            <option value="Sim_Pouco">Sim-Pouco</option>
+                            <option value="Nao">Não</option>
+                        </select>
                     </div>
                     
                     <div class="button-container">
-                        <button id="bbtn" class="botaosem">Enviar</button>
+                        <button id="bbotao" class="botaosem">Enviar</button>
                         <button id="bottao" class="botaozinho">Avançar</button>
                     </div>
                 </div>
                 
-                <div id="calcados" class="section-card">
-                    <h2 class="section-title">Calçados</h2>
+                <div id="eletro" class="section-card">
+                    <h2 class="section-title">Eletrodomésticos</h2>
                     
-                    <div class="form-group">
-                        <label class="form-label">Gênero</label>
-                        <select id="calcadosgenero" name="calcadosgenero" class="form-control">
-                            <option value="" disabled selected>Selecione...</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label">Qualidade</label>
-                        <select id="calcadosqualidade" name="calcadosqualidade" class="form-control">
-                            <option value="" disabled selected>Selecione...</option>
-                            <option value="Novo">Novo</option>
-                            <option value="Usado-Bom">Usado-Bom</option>
-                            <option value="Usado-Regular">Usado-Regular</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label">Quantidade</label>
-                        <input type="number" id="calcadosquantidade" name="calcadosquantidade" placeholder="Digite..." min="1" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label">Tamanho</label>
-                        <input type="text" id="calcadosdescricao" name="calcadosdescricao" placeholder="25,44,35..." class="form-control" required>
-                    </div>
+                          
+                        <div class="form-group">
+                            <label class="form-label">Qualidade</label>
+                            <select id="eletroqualidade" name="eletroqualidade" class="form-control">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Novo">Novo</option>
+                                <option value="Usado-Bom">Usado-Bom</option>
+                                <option value="Usado-Regular">Usado-Regular</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Quantidade</label>
+                            <input type="number" id="eletroquantidade" name="eletroquantidade" placeholder="Digite..." min="1" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Especificação</label>
+                            <input type="text" id="eletrodescricao" name="eletrodescricao" placeholder="Televisão, fogão, geladeira..." class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Precisa de reparo?</label>
+                            <select id="eletroreparo" name="eletroreparo" class="form-control">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Sim_Muito">Sim-Muito</option>
+                                <option value="Sim_Pouco">Sim-Pouco</option>
+                                <option value="Nao">Não</option>
+                            </select>
+                        </div>
                     
                     <div class="button-container">
-                        <button id="bbotao" class="botaosem">Voltar</button>
+                        <button id="back-to-roupas" class="botaosem">Voltar</button>
                         <button id="bbtn" class="botaozinho">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
    </main>
  </div>
 
@@ -406,7 +405,9 @@
 
 
 
-   
+
+  
+
     <!-- Modal de Confirmação (Atualizado com o novo estilo) -->
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -434,7 +435,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body" id="errorModalBody">
-                    <p>Por favor, preencha pelo menos um dos formulários (Roupas ou Calçados) antes de enviar.</p>
+                    <p>Por favor, preencha pelo menos um dos formulários (Móveis ou Eletrodomésticos) antes de enviar.</p>
                 </div>
                 <div class="modal-footer">
                     <button id="closeErrorModal" type="button" class="botaozinho" data-bs-dismiss="modal">Entendi</button>
@@ -449,7 +450,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./JS/doacoesroupa.js"></script>
+    <script src="./JS/doacoesmoveis.js"></script>
        
    
 </body>
