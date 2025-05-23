@@ -1,4 +1,5 @@
-Projeto Enchant: Otimizando a Resposta a Enchentes na Bahia 🌊🇧🇷
+Projeto Enchant: Otimizando a Resposta a Enchentes na Bahia 🌊
+
 O Projeto Enchant é uma proposta avaliativa com o objetivo primordial de aprimorar a gestão de Organizações Não Governamentais (ONGs) que trabalham incansavelmente no auxílio às vítimas das enchentes na Bahia. Entendemos que, em momentos de crise, a eficiência na coordenação e na distribuição de recursos é crucial para minimizar o sofrimento e otimizar a resposta humanitária. ❤️
 
 O cerne do projeto é desenvolver uma plataforma digital 💻 intuitiva e robusta que sirva como um hub central para as ONGs. Essa plataforma terá funcionalidades essenciais para otimizar a operacionalização das ações, tornando a ajuda mais rápida e direcionada. 🚀
@@ -15,9 +16,14 @@ Melhor alocação de recursos. 📦
 Aumento da transparência e da confiança pública. 🤝
 Redução do impacto das enchentes na população. 🙏
 Integrantes do Projeto Enchant:
+
 Andressa Cruz 👩‍💻
+
 Camila Guimarães 📝
+
 Guilherme Oliver 💡
 Manuela Souza ✍️
+
 Marcelle Abreu 📊
+
 Marcos Henry 📍
