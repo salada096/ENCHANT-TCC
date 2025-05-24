@@ -72,8 +72,18 @@ color: #000000;
 }
 
 #imagem2{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relative{
+  position: relative;
+}
+
+.img-container{
   width: 146vh;
-  margin-left: 13.8%;
+  overflow: hidden;
 }
 
 .linha-separadora{
@@ -81,6 +91,18 @@ color: #000000;
   width: 800px;
   border: 2px solid black;
   margin: 0 auto;
+}
+
+.grafico-container {
+  width: 100%;       
+  max-width: 600px;  
+  height: auto;      
+}
+
+.grafico {
+  width: 100%;      
+  height: auto;      
+  display: block;  
 }
 
 .linha-separadora1 {
@@ -130,6 +152,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .quadrado-laranja {
@@ -216,12 +239,14 @@ a{
   width: 90vh;
   background-color: black;
   margin-top: 3vh;
-  margin-left: 31.11vh;
+  margin-left: 11.11vh;
   border-radius: 10px;
 }
 
 .container3{
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -258,5 +283,39 @@ a{
   .secao-grafico p{
     font-size: 10px;
 
+  }
+
+  .container5{
+    flex-direction: column;
+  }
+
+  .card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .grafico-container {
+    width: 300px;
+  }
+
+  #secao-grafico h3, #secao-grafico p{
+    font-size: 10px;
+  }
+
+  #pontos p{
+    font-size: 5px;
+  }
+  #pontos{
+    flex-direction: column;
+  }
+
+  #quadrado{
+    margin-left: 38vh;
+    height: 47.67vh;
+    width: 70vh;
+  }
+
+  .texto{
+    width: 60vh;
   }
 }
