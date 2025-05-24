@@ -99,7 +99,7 @@
         .input-row {
             margin-bottom: 15px;
         }
-        
+     
        .label {
             display: block;
             margin-bottom: 3px;
@@ -180,10 +180,9 @@
             margin-left: 38rem;
             margin-bottom: 98px;
             color: #4e3629;
-            width: 10rem;
-            height: 3rem;
+            padding: 8px 15px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 1rem;
             cursor: pointer;
         }
@@ -200,34 +199,30 @@
         
         .gallery {
             margin-top: 30px;
-          
-        
-        
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap; /* Para ajustar itens em telas menores */
-            margin: 0 auto; /* Centraliza o contêiner */
-            width: 100%
-            
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 1650px;
+            margin: 0 auto;
         }
         
         .gallery-item {
             height: auto;
             min-height: 200px;
-            
             padding: 12px;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
             border-radius: 20px;
-         
-             border: 1px solid  #ddd;
+            border: 1px solid #ddd;
             display: flex;
             justify-content: center;
-           width: 100%;
-            max-width: 800px;   
+            width: calc(50% - 10px); /* Adjust width to fit two items per row with gap */
+            max-width: 800px;
             align-items: center;
             position: relative;
         }
+        
         
         .gallery-item img {
             width: 200px;
@@ -442,7 +437,7 @@
                 width: 100%;
             }
             .input, .textarea {
-                width: 16rem;
+                width: 20rem;
                 padding: 6px;
                 border: 1px solid #ddd;
                 border-radius: 4px;
@@ -450,13 +445,12 @@
             }
             .button{
                 margin-left:0;
-                width: 8rem;
-                height:3rem;
+               padding:8px 25px;
                 font-size: 14px;
             }
             
         .input-image-container {
-            width: 210px;
+            width: 260px;
             margin-top:22px;
             height: 200px;
             background-color: #f0f0f0;
@@ -472,7 +466,7 @@
         }
             
             .gallery-item img {
-                width: 200px;
+                width: 190px;
                 align-self:center;
                 margin-right: 0;
                 margin-bottom: 15px;
@@ -488,3 +482,4 @@
                 justify-content: flex-end;
             }
         }
+
