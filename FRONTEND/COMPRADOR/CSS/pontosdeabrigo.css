@@ -230,6 +230,7 @@
             border-radius: 4px;
             margin-top: 10px;
             margin-right: 20px;
+            object-fit: cover;
         }
         
         .gallery-info {
